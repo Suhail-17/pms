@@ -196,6 +196,43 @@
     }
   });
 
+  // Search Dropdown Toggle
+  const searchButtons = document.querySelectorAll('.Menu_btn_search__uRvE5');
+  const searchDropdown = document.getElementById('header-search-dropdown');
+
+  if (searchDropdown) {
+    searchButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isHidden = searchDropdown.style.display === 'none';
+        searchDropdown.style.display = isHidden ? 'block' : 'none';
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (searchDropdown.style.display === 'block') {
+        const isClickInsideSearch = searchDropdown.contains(e.target);
+        
+        let isClickOnButton = false;
+        searchButtons.forEach(btn => {
+          if (btn.contains(e.target)) isClickOnButton = true;
+        });
+
+        if (!isClickInsideSearch && !isClickOnButton) {
+          searchDropdown.style.display = 'none';
+        }
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        searchDropdown.style.display = 'none';
+      }
+    });
+  }
+
   decodeHeaderImages();
   updateScrollState();
   handleDesktopResize();
