@@ -1,0 +1,140 @@
+:root {
+    --active-bg: #d40015;
+    --item-size: 55px;
+    --toolbar-bg: #000;
+    --text-color: #d40015;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Toolbar Container */
+.ToolbarNew_btn_group__fjzTX {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: var(--toolbar-bg);
+    border-radius: 40px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 55px;
+    box-sizing: content-box;
+    /* Ensure padding doesn't shrink content width if set */
+}
+
+/* The Moving Bubble */
+.ToolbarNew_active_shape__ImTu1 {
+    position: absolute;
+    width: var(--item-size);
+    height: var(--item-size);
+    border-radius: 50%;
+    background-color: var(--active-bg);
+    transition: top 0.2s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.2s ease;
+    z-index: 0;
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Center horizontally */
+}
+
+/* Item Wrapper */
+.ToolbarNew_btn_wrap__DY5dP {
+    position: relative;
+    z-index: 1;
+    width: var(--item-size);
+    height: var(--item-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Icons */
+.ToolbarNew_button__Q2HCE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+}
+
+.ToolbarNew_btn_icon__f1e5N {
+    display: flex;
+    /* Ensure container is flex */
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.ToolbarNew_btn_icon__f1e5N img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    /* Remove inline spacing */
+    filter: brightness(0) invert(1);
+    /* Force white color */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Interaction for Icons */
+.ToolbarNew_btn_wrap__DY5dP:hover .ToolbarNew_btn_icon__f1e5N img {
+    transform: scale(1.1);
+}
+
+/* Tooltip Text */
+.ToolbarNew_btn_text__daA8T {
+    position: absolute;
+    right: 70px;
+    background-color: white;
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(20px) scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ToolbarNew_btn_wrap__DY5dP:hover .ToolbarNew_btn_text__daA8T {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+.ToolbarNew_btn_wrap__DY5dP[data-color="#d40015"] .ToolbarNew_btn_text__daA8T {
+    color: #d40015;
+}
+
+.ToolbarNew_btn_wrap__DY5dP[data-color="#ffffff"] .ToolbarNew_btn_text__daA8T {
+    color: #333;
+}
+
+.ToolbarNew_btn_wrap__DY5dP[data-color="#0066cc"] .ToolbarNew_btn_text__daA8T {
+    color: #0066cc;
+}
+
+.ToolbarNew_btn_wrap__DY5dP[data-color="#25D366"] .ToolbarNew_btn_text__daA8T {
+    color: #25D366;
+}
+
+.ToolbarNew_btn_wrap__DY5dP[data-color="#ff9900"] .ToolbarNew_btn_text__daA8T {
+    color: #ff9900;
+}
