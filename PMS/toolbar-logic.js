@@ -31,6 +31,26 @@
     // Scroll logic
     let lastScrollY = window.scrollY;
     
+    // Bottom menu logic
+    const bottomMenu = document.querySelector(".BottomMenu_tool_wrap__T_NZJ");
+    const updateBottomMenu = (scrollY) => {
+      if (!bottomMenu) return;
+      const isAtTop = scrollY <= 100;
+      
+      const scrollHeight = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+      );
+      const isAtBottom = (window.innerHeight + scrollY) >= scrollHeight - 50;
+
+      if (isAtTop || isAtBottom) {
+        bottomMenu.classList.remove("BottomMenu_tool_wrap_open__A7nWf");
+      } else {
+        bottomMenu.classList.add("BottomMenu_tool_wrap_open__A7nWf");
+      }
+    };
+
     // Initialize based on current scroll position on load
     const isAtTop = window.scrollY <= 100;
     toggleToolbar(isAtTop);
@@ -39,6 +59,7 @@
     } else {
       toggleBtn.classList.remove("ToolbarNew_hide__i2aHk");
     }
+    updateBottomMenu(window.scrollY);
 
     window.addEventListener("scroll", () => {
       const currentScrollY = window.scrollY;
@@ -52,6 +73,8 @@
         toggleToolbar(true);
         toggleBtn.classList.add("ToolbarNew_hide__i2aHk");
       }
+      
+      updateBottomMenu(currentScrollY);
       
       lastScrollY = currentScrollY;
     }, { passive: true });
