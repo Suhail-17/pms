@@ -1,0 +1,171 @@
+/* Mobile Friendliness Fixes for Campus.html */
+
+/* Global Fixes */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+.container, .container-fluid {
+    max-width: 100% !important;
+    width: auto !important;
+}
+
+/* Header Fixes */
+@media (max-width: 576px) {
+    .Menu_header__XEQwJ .navbar-brand {
+        width: 100px !important;
+    }
+    
+    .Menu_payment_btn__I_1O8 {
+        font-size: 10px !important;
+        padding: 4px 8px !important;
+        min-width: unset !important;
+    }
+    
+    .Menu_btn_search__uRvE5 svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    
+    .Menu_hamburger__Sctg3 {
+        width: 20px !important;
+    }
+}
+
+/* Facilities Section (Swiper Carousel for Mobile) */
+@media (max-width: 991px) {
+    .Facilities_fac_wrap_sec__L69cQ .swiper {
+        overflow: hidden !important;
+        width: 100% !important;
+    }
+
+    .Facilities_fac_wrap_sec__L69cQ .swiper-wrapper.row {
+        display: flex !important;
+        flex-direction: row !important; /* Back to row for horizontal swiper */
+        flex-wrap: nowrap !important;
+        width: 100% !important;
+    }
+    
+    .Facilities_course_grid_item__7PwHk.swiper-slide {
+        width: 100% !important;
+        height: 300px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .Facilities_fac_wrap_sec__L69cQ .swiper-pagination {
+        position: relative !important;
+        bottom: 0 !important;
+        margin-top: 20px !important;
+        text-align: center !important;
+    }
+
+    .Facilities_fac_wrap_sec__L69cQ .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+        background: #fff !important;
+        opacity: 0.5 !important;
+        margin: 0 5px !important;
+        border-radius: 50% !important;
+        display: inline-block !important;
+        cursor: pointer !important;
+    }
+
+    .Facilities_fac_wrap_sec__L69cQ .swiper-pagination-bullet-active {
+        opacity: 1 !important;
+        background: var(--red, #e30613) !important;
+    }
+}
+    
+    .FacilityCard_grid_item__HWN0j {
+        height: 100% !important;
+    }
+
+/* Requirements / Impact Section Fixes */
+@media (max-width: 767px) {
+    .RequirementCard_card__ypJmL {
+        padding: 20px !important;
+    }
+    
+    .RequirementCard_card_letter___5Qlo {
+        font-size: 40px !important;
+    }
+}
+
+/* News Section Fixes */
+@media (max-width: 991px) {
+    .NewsCard_linkwrapper__epB1Z {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .News_news_row__u_M_Y {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+/* Container & Row Padding Fixes */
+@media (max-width: 767px) {
+    .container, .container-fluid {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .row {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }
+}
+
+/* Header Refinement for Extra Small Screens */
+@media (max-width: 400px) {
+    .Menu_payment_btn__I_1O8 {
+        font-size: 0 !important; /* Hide text, keep padding for the 'Online Payment' button if it has an icon? No, let's just make it very compact */
+        padding: 4px 6px !important;
+    }
+    .Menu_payment_btn__I_1O8::after {
+        content: 'Pay' !important;
+        font-size: 10px !important;
+    }
+    
+    .Menu_header__XEQwJ .navbar-brand {
+        width: 80px !important;
+    }
+}
+
+/* Restore Desktop Grid for Facilities (Regression Fix) */
+@media (min-width: 992px) {
+    .Facilities_fac_wrap_sec__L69cQ .swiper {
+        overflow: visible !important;
+    }
+
+    .Facilities_fac_wrap_sec__L69cQ .swiper-wrapper.row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        transform: none !important;
+        width: 100% !important;
+    }
+    
+    .Facilities_course_grid_item__7PwHk.swiper-slide {
+        width: 20% !important; /* Ensure 5 columns on desktop */
+        height: auto !important;
+        flex-shrink: 1 !important;
+    }
+
+    .Facilities_fac_wrap_sec__L69cQ .swiper-pagination {
+        display: none !important;
+    }
+}
+
+/* Why join MDX section */
+@media (max-width: 991px) {
+    .MdxBenefits_row__WxMqB {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    .CourseCountCard_countcard__N4qtz {
+        margin-bottom: 15px !important;
+    }
+}
