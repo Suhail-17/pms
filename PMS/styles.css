@@ -1,5 +1,400 @@
 ﻿/* === a13503f208688ab1.css === */
 
+/* toolbar */
+
+.show-menu .ToolbarNew_toolbar__G4qwY {
+    display: none
+}
+
+.ToolbarNew_toolbar__G4qwY {
+    position: fixed;
+    top: 80px;
+    right: 15px;
+    z-index: 1020;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    --button-size: 55px;
+    background-color: rgba(0,0,0,0)!important
+}
+
+.ToolbarNew_toolbar__G4qwY.ToolbarNew_hided__uPlS0 {
+    opacity: 0
+}
+
+.ToolbarNew_toolbar__G4qwY html:not(#INDdummy) body[data-indbackgroundcolors]:not(#INDdummy)>:not(#INDWrap) * .ToolbarNew_btn_group__fjzTX,.ToolbarNew_toolbar__G4qwYhtml:not(#INDdummy) body[data-indbackgroundcolors]:not(#INDdummy)>:not(#INDWrap) * {
+    background-color: rgba(0,0,0,0)!important
+}
+
+@media(min-width: 1600px) {
+    .ToolbarNew_toolbar__G4qwY {
+        --button-size:66px
+    }
+}
+
+.ToolbarNew_toolbar__G4qwY .ToolbarNew_btn__kny1D {
+    background-color: var(--white)!important
+}
+
+.ToolbarNew_toolbar__G4qwY .ToolbarNew_btn__kny1D * {
+    background-color: rgba(0,0,0,0)!important
+}
+
+@media(min-width: 992px) {
+    .ToolbarNew_toolbar__G4qwY {
+        right:1.1111111111rem;
+        top: 115px
+    }
+}
+
+@media(min-width: 1600px) {
+    .ToolbarNew_toolbar__G4qwY {
+        top:155px
+    }
+}
+
+.ToolbarNew_active_shape__ImTu1 {
+    width: var(--button-size);
+    height: var(--button-size);
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    z-index: 0;
+    top: var(--top-value);
+    transform: scale(0);
+    transition: top cubic-bezier(.075,.82,.165,1) .3s,transform cubic-bezier(.075,.82,.165,1) .8s var(--transition-delay);
+    transform-origin: center;
+    opacity: 0
+}
+
+.ToolbarNew_active_shape__ImTu1.color_1 {
+    background-color: var(--red)!important;
+    --transition-delay: 0.1s
+}
+
+.ToolbarNew_active_shape__ImTu1.color_2 {
+    background-color: var(--yellow)!important;
+    --transition-delay: 0.2s
+}
+
+.ToolbarNew_active_shape__ImTu1.color_3 {
+    background-color: var(--orange)!important;
+    --transition-delay: 0.3s
+}
+
+.ToolbarNew_active_shape__ImTu1.color_4 {
+    background-color: #19a56e!important;
+    --transition-delay: 0.4s
+}
+
+.ToolbarNew_active_shape__ImTu1.color_5 {
+    background-color: var(--pink)!important;
+    --transition-delay: 0.5s
+}
+
+.ToolbarNew_active_shape__ImTu1.ToolbarNew_show_shape__9XtEe {
+    transform: scale(1);
+    opacity: 1
+}
+
+.ToolbarNew_btn__kny1D {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--white);
+    padding: 7px;
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.33);
+    align-items: center
+}
+
+@media(min-width: 992px) {
+    .ToolbarNew_btn__kny1D {
+        width:2.9444444444rem;
+        padding: 10px;
+        height: 2.9444444444rem
+    }
+}
+
+.ToolbarNew_btn_expand__XTl3K {
+    transition: all .5s;
+    opacity: 1;
+    transform: none
+}
+
+.ToolbarNew_btn_expand__XTl3K>span {
+    transition: all .3s ease;
+    transform: rotate(0deg)
+}
+
+.ToolbarNew_btn_expand_open__pfYPj>span {
+    transform: rotate(90deg)
+}
+
+.ToolbarNew_btn_expand__XTl3K.ToolbarNew_hide__i2aHk {
+    transform: translateX(30px);
+    opacity: 0;
+    pointer-events: none
+}
+
+.ToolbarNew_btn_group__fjzTX {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    min-width: 1px;
+    border-radius: 40px;
+    padding: 4px;
+    background-color: rgba(0,0,0,0)!important
+}
+
+@media(min-width: 1600px) {
+    .ToolbarNew_btn_group__fjzTX {
+        top:90px
+    }
+}
+
+.ToolbarNew_btn_group__fjzTX>div:not(:last-child) {
+    margin-bottom: 10px
+}
+
+.ToolbarNew_btn_group__fjzTX>div {
+    transition: all .5s ease;
+    transform: translateY(-30px) scale(.8);
+    transform-origin: center;
+    opacity: 0;
+    border-radius: 0
+}
+
+.ToolbarNew_btn_group__fjzTX>div button {
+    margin-bottom: 0
+}
+
+.ToolbarNew_btn_group__fjzTX>div:first-of-type {
+    transition-delay: .1s
+}
+
+.ToolbarNew_btn_group__fjzTX>div:nth-of-type(2) {
+    transition-delay: .2s
+}
+
+.ToolbarNew_btn_group__fjzTX>div:nth-of-type(3) {
+    transition-delay: .3s
+}
+
+.ToolbarNew_btn_group__fjzTX>div:nth-of-type(4) {
+    transition-delay: .4s
+}
+
+.ToolbarNew_btn_group__fjzTX>div:nth-of-type(5) {
+    transition-delay: .5s
+}
+
+.ToolbarNew_btn_group__fjzTX>div:nth-of-type(6) {
+    transition-delay: .6s
+}
+
+.ToolbarNew_btn_group_closed__Soo2z {
+    transition: opacity .2s ease;
+    transition-delay: .6s;
+    opacity: 0
+}
+
+.ToolbarNew_btn_group_expanded__sh6Xk {
+    pointer-events: all;
+    background-color: #000!important;
+    transition: background-color 1s ease;
+    opacity: 1
+}
+
+.ToolbarNew_btn_group_expanded__sh6Xk .ToolbarNew_button__Q2HCE {
+    background-color: rgba(0,0,0,0)!important
+}
+
+.ToolbarNew_btn_group_expanded__sh6Xk>div {
+    transform: none;
+    opacity: 1
+}
+
+.ToolbarNew_btn_group_slim__RTfk8 .ToolbarNew_btn_wrap__DY5dP {
+    text-align: right
+}
+
+.ToolbarNew_btn_group_slim__RTfk8 .ToolbarNew_button__Q2HCE {
+    width: max-content!important;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.33)
+}
+
+.ToolbarNew_btn_wrap__DY5dP {
+    text-align: right
+}
+
+.ToolbarNew_btn_wrap__DY5dP a {
+    text-decoration: none;
+    display: block
+}
+
+@media(min-width: 1800px) {
+    .ToolbarNew_btn_wrap__DY5dP a {
+        display:block
+    }
+}
+
+.ToolbarNew_btn_wrap__DY5dP .ToolbarNew_button__Q2HCE {
+    position: relative;
+    width: var(--button-size,66px);
+    height: var(--button-size,66px);
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.2);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.ToolbarNew_btn_wrap__DY5dP .ToolbarNew_button__Q2HCE * {
+    pointer-events: none
+}
+
+.ToolbarNew_btn_wrap__DY5dP .ToolbarNew_button__Q2HCE span.ToolbarNew_btn_icon__f1e5N {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.ToolbarNew_btn_wrap__DY5dP .ToolbarNew_button__Q2HCE .ToolbarNew_btn_text__daA8T {
+    position: absolute;
+    white-space: nowrap;
+    right: 78px;
+    min-height: 100%;
+    background-color: var(--white);
+    padding: .8333333333rem 1.6666666667rem;
+    top: 50%;
+    transform: translate(40px,-50%);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    pointer-events: none;
+    line-height: 1.2;
+    font-size: 1.0611111111rem;
+    font-weight: 700
+}
+
+.ToolbarNew_btn_wrap__DY5dP .ToolbarNew_button__Q2HCE:hover .ToolbarNew_btn_text__daA8T,.ToolbarNew_btn_wrap__DY5dP .ToolbarNew_button_active__tLcWt .ToolbarNew_btn_text__daA8T {
+    opacity: 1;
+    transition: transform .45s cubic-bezier(.075,.82,.165,1),opacity .45s cubic-bezier(.075,.82,.165,1);
+    transform: translateY(-50%);
+    transform-origin: right
+}
+
+@keyframes ToolbarNew_drop__rSCqy {
+    0% {
+        transform: translateY(-200px) scaleY(.9);
+        opacity: 0
+    }
+
+    5% {
+        opacity: .7
+    }
+
+    50% {
+        transform: translateY(0) scaleY(1);
+        opacity: 1
+    }
+
+    65% {
+        transform: translateY(-17px) scaleY(.9);
+        opacity: 1
+    }
+
+    75% {
+        transform: translateY(-22px) scaleY(.9);
+        opacity: 1
+    }
+
+    to {
+        transform: translateY(0) scaleY(1);
+        opacity: 1
+    }
+}
+
+.ToolbarNew_btn_expand__XTl3K .ToolbarNew_expand_wrap_bottom__zyHyf,.ToolbarNew_btn_expand__XTl3K .ToolbarNew_expand_wrap_top__Cn8Hg {
+    width: 21px;
+    height: 11px;
+    margin: 10px 0;
+    display: block;
+    transition: all .3s ease;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26.701' height='14.232' viewBox='0 0 26.701 14.232'%3E%3Cpath id='Path_108189' data-name='Path 108189' d='M13.35,0,0,11.078l2.621,3.154L13.35,5.324l10.732,8.908,2.62-3.154Z'/%3E%3C/svg%3E%0A")
+}
+
+.ToolbarNew_btn_expand__XTl3K .ToolbarNew_expand_wrap_bottom__zyHyf {
+    transform: rotate(180deg);
+    margin-bottom: 0
+}
+
+.ToolbarNew_btn_expand__XTl3K .ToolbarNew_expand_wrap_top__Cn8Hg {
+    margin-top: 0
+}
+
+.ToolbarNew_btn_expand_open__pfYPj .ToolbarNew_expand_wrap_bottom__zyHyf {
+    transform: rotate(180deg) translateY(14px)
+}
+
+.ToolbarNew_btn_expand_open__pfYPj .ToolbarNew_expand_wrap_top__Cn8Hg {
+    transform: translateY(14px)
+}
+
+.ToolbarNew_btn_group_slim__RTfk8 .ToolbarNew_btn_wrap__DY5dP .ToolbarNew_btn_icon__f1e5N {
+    filter: drop-shadow(0 0 0 rgba(227,227,227,0))!important;
+    transition: all .4s ease
+}
+
+.ToolbarNew_btn_group_slim__RTfk8 .ToolbarNew_btn_wrap__DY5dP .ToolbarNew_btn_text__daA8T {
+    transition: all .4s ease;
+    overflow: hidden;
+    width: 0;
+    padding: 0
+}
+
+.ToolbarNew_btn_group_slim__RTfk8 .ToolbarNew_btn_wrap__DY5dP:hover .ToolbarNew_btn_icon__f1e5N {
+    filter: drop-shadow(6px 0 0 #e3e3e3)!important
+}
+
+.ToolbarNew_btn_group_slim__RTfk8 .ToolbarNew_btn_wrap__DY5dP:hover .ToolbarNew_btn_text__daA8T {
+    width: 100%;
+    padding: 0 40px 0 13px
+}
+
+html:not(#INDdummy) body:not(#INDdummy).INDbackgroundColors>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP,html:not(#INDdummy) body[data-indblackwhite]:not(#INDdummy)>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP,html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy) html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy) .ToolbarNew_btn_wrap__DY5dP,html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy)>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP {
+    text-align: right;
+    background-color: rgba(0,0,0,0)!important;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+html:not(#INDdummy) body:not(#INDdummy).INDbackgroundColors>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP a,html:not(#INDdummy) body[data-indblackwhite]:not(#INDdummy)>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP a,html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy) html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy) .ToolbarNew_btn_wrap__DY5dP a,html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy)>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP a {
+    background-color: rgba(0,0,0,0)!important
+}
+
+html:not(#INDdummy) body:not(#INDdummy).INDbackgroundColors>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP .ToolbarNew_button__Q2HCE,html:not(#INDdummy) body[data-indblackwhite]:not(#INDdummy)>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP .ToolbarNew_button__Q2HCE,html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy) html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy) .ToolbarNew_btn_wrap__DY5dP .ToolbarNew_button__Q2HCE,html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy)>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP .ToolbarNew_button__Q2HCE {
+    background-color: rgba(0,0,0,.2)!important
+}
+
+html:not(#INDdummy) body:not(#INDdummy).INDbackgroundColors>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP .ToolbarNew_btn_icon__f1e5N,html:not(#INDdummy) body[data-indblackwhite]:not(#INDdummy)>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP .ToolbarNew_btn_icon__f1e5N,html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy) html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy) .ToolbarNew_btn_wrap__DY5dP .ToolbarNew_btn_icon__f1e5N,html:not(#INDdummy) body[data-indwhiteblack]:not(#INDdummy)>:not(#INDWrap) .ToolbarNew_btn_wrap__DY5dP .ToolbarNew_btn_icon__f1e5N {
+    background-color: rgba(0,0,0,0)!important
+}
+
+/* toolbar */
+
 @font-face {
     font-family: Dax;
     src: url(./font-faces/Dax.5633fa54.woff2) format("woff2"), url(./font-faces/Dax.66e5ecae.woff) format("woff"), url(./font-faces/Dax.8ea906e2.ttf) format("truetype");
